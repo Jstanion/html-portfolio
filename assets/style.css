@@ -17,12 +17,13 @@ header ul li {
 
 #profile-image {
     border-radius: 50%;
-    width: 25rem
+    width: auto;
+    height:25rem;
 }
 
 .introduction {
-   display: inline-flex;
-    margin: 5rem;
+    display: inline-flex;
+    padding: 5rem;
 }
 
 #name {
@@ -35,5 +36,21 @@ header ul li {
 }
 
 h1 {
-    font-size: 5rem
+    font-size: 5rem;
+}
+
+#about-me {
+    padding:10px;
+    width: 100%;
+    height:675px;
+}
+
+#my-work {
+    display:inline-flex;
+    
+}
+
+.project-image {
+    width:auto;
+    height:
 }
