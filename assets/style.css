@@ -21,7 +21,19 @@ header ul li {
 }
 
 .introduction {
-    display:flex;
-    align-items: center;
-    margin: 5rem
+   display: inline-flex;
+    margin: 5rem;
+}
+
+#name {
+    display:block;
+    margin:8rem;
+}
+
+#employment {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 5rem
 }
