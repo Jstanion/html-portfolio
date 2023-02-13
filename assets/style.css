@@ -1,46 +1,46 @@
+/* Universal Selectors */
 *{
     margin:0%;
     padding:0%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
 }
+/* End Universal Selectors */
 
+/* Start Element Selectors */
+/* body {
+    background-color: #f2f2fb;
+    opacity: 0.4;
+    background-size: 24px 24px;
+    background-image:  repeating-linear-gradient(0deg, #000, #000 1.2000000000000002px, #f2f2fb 1.2000000000000002px, #f2f2fb);
+} */
 
 header ul {
     display:flex;
     Justify-content:end;
     list-style-type:none;
     font-size: 30px;
+    background-color: #359268
 }
 
 header ul li {
-    margin:3%
-}
-
-#profile-image {
-    border-radius: 50%;
-    width: auto;
-    height:25rem;
-}
-
-.introduction {
-    display: inline-flex;
-    justify-content: center;
-    padding-left: 10rem;
-    padding-top:5rem;
-    padding-bottom: 20rem
-}
-
-#name {
-    display:block;
-    margin:8rem;
-}
-
-#employment {
-    font-size: 1.5rem;
+    margin:3%;
+    color: red;
 }
 
 h1 {
     font-size: 5rem;
+}
+
+
+/* End Element Selectors */
+
+/* Start Class Selectors */
+.introduction {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+    background-color: #92355F;
 }
 
 .about-me p {
@@ -53,18 +53,72 @@ h1 {
     justify-content:center;
     align-items:center;
     width:auto;
-    height:200px;
+    height:750px;
 }
 
-#about-me {
+.section-heading {
     display:flex;
     justify-content: center;
     font-size:2.3rem;
 }
 
-/* body { */
-    background-color: #f2f2fb;
-    opacity: 0.4;
-    background-size: 24px 24px;
-    background-image:  repeating-linear-gradient(0deg, #000, #000 1.2000000000000002px, #f2f2fb 1.2000000000000002px, #f2f2fb);
+.my-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 750px;
 }
+
+.project-mage {
+    width:fit-content;
+}
+
+.project-image img {
+    margin:1rem;
+
+    width:auto;
+    height: 15rem;
+    display:flex;
+    justify-content: column;
+    border-style: dashed;
+}
+
+.first-project img {
+    margin: 1rem;
+    width: auto;
+    height: 20rem;
+    border-style: dashed;
+}
+
+/* End Class Selectors */
+
+/* Start ID Selectors */
+#name {
+    display:block;
+    margin:8rem;
+}
+
+#employment {
+    font-size: 1.5rem;
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: auto;
+    height:30rem;
+    padding: 5%
+}
+
+#about-me {
+    
+}
+
+/* End ID Selectors */
+
+/* Start Media Queries */
+
+/* End MEdia Queries */
+
+
+
