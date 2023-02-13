@@ -1,0 +1,150 @@
+/* Universal Selectors */
+*{
+    margin:0%;
+    padding:0%;
+    font-family:'Courier New', Courier, monospace;   
+}
+/* End Universal Selectors */
+
+/* Start Element Selectors */
+body {
+    background-color: #f2f2fb;
+}
+
+main {
+    background-color: #f2f2fb;
+    opacity: 1;
+    background-size: 28px 28px;
+    background-image:  repeating-linear-gradient(0deg, #4a71b9, #4a71b9 1px, #f2f2fb 1.4000000000000001px, #f2f2fb);
+}
+
+header {
+    background-color: #f2f2fb
+}
+
+header ul {
+    display:flex;
+    Justify-content:end;
+    list-style-type:none;
+    font-size: 30px;
+}
+
+header ul li {
+    margin:3%;
+    color: black;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+footer {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height: 100px;
+}
+/* End Element Selectors */
+
+/* Start Class Selectors */
+.introduction {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.left-margin {
+    margin-left: 100px;
+    border-left: red solid 1px;
+}
+
+p {
+    line-height: 5rem
+}
+
+.about-me {
+    font-size:1.7rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:auto;
+    height:750px;
+}
+
+.section-heading {
+    display:flex;
+    justify-content: center;
+    font-size:2.3rem;
+}
+
+.my-work {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 750px;
+}
+
+.my-work a {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.project-image img {
+    margin:1rem;
+    width:auto;
+    height: 15rem;
+    display:flex;
+    justify-content: column;
+    border-style: dashed;
+}
+
+.first-project img {
+    margin: 1rem;
+    width: auto;
+    height: 20rem;
+    border-style: dashed;
+}
+
+.connect-with-me {
+    display:inline-flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 700px
+}
+
+.contact-sections {
+
+}
+/* End Class Selectors */
+
+/* Start ID Selectors */
+#name {
+    display:block;
+    margin:8rem;
+}
+
+#employment {
+    font-size: 1.5rem;
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: auto;
+    height:30rem;
+    padding: 5%
+}
+/* End ID Selectors */
+
+/* Start Media Queries */
+
+/* End MEdia Queries */
+
+
+
