@@ -4,6 +4,7 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
 }
 
+
 header ul {
     display:flex;
     Justify-content:end;
@@ -23,7 +24,10 @@ header ul li {
 
 .introduction {
     display: inline-flex;
-    padding: 5rem;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-top:5rem;
+    padding-bottom: 20rem
 }
 
 #name {
@@ -39,18 +43,28 @@ h1 {
     font-size: 5rem;
 }
 
-#about-me {
-    padding:10px;
-    width: 100%;
-    height:675px;
+.about-me p {
+    line-height: 5rem
 }
 
-#my-work {
-    display:inline-flex;
-    
-}
-
-.project-image {
+.about-me {
+    font-size:1.7rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     width:auto;
-    height:
+    height:200px;
+}
+
+#about-me {
+    display:flex;
+    justify-content: center;
+    font-size:2.3rem;
+}
+
+/* body { */
+    background-color: #f2f2fb;
+    opacity: 0.4;
+    background-size: 24px 24px;
+    background-image:  repeating-linear-gradient(0deg, #000, #000 1.2000000000000002px, #f2f2fb 1.2000000000000002px, #f2f2fb);
 }
