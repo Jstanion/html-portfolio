@@ -7,31 +7,43 @@
 /* End Universal Selectors */
 
 /* Start Element Selectors */
-/* body {
+body {
     background-color: #f2f2fb;
-    opacity: 0.4;
-    background-size: 24px 24px;
-    background-image:  repeating-linear-gradient(0deg, #000, #000 1.2000000000000002px, #f2f2fb 1.2000000000000002px, #f2f2fb);
-} */
+}
+
+main {
+    background-color: #f2f2fb;
+    opacity: 1;
+    background-size: 28px 28px;
+    background-image:  repeating-linear-gradient(0deg, #4a71b9, #4a71b9 1px, #f2f2fb 1.4000000000000001px, #f2f2fb);
+}
+
+header {
+    background-color: #f2f2fb
+}
 
 header ul {
     display:flex;
     Justify-content:end;
     list-style-type:none;
     font-size: 30px;
-    background-color: #359268
 }
 
 header ul li {
     margin:3%;
-    color: red;
+    color: black;
 }
 
 h1 {
     font-size: 5rem;
 }
 
-
+footer {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height: 100px;
+}
 /* End Element Selectors */
 
 /* Start Class Selectors */
@@ -39,11 +51,15 @@ h1 {
     display: inline-flex;
     align-items: center;
     width: 100%;
-    height: 750px;
-    background-color: #92355F;
+    height: 700px;
 }
 
-.about-me p {
+.left-margin {
+    margin-left: 100px;
+    border-left: red solid 1px;
+}
+
+p {
     line-height: 5rem
 }
 
