@@ -24,6 +24,8 @@ main {
 
 button {
     background-color: pink;
+    height: 2rem;
+    width: 100%;
 }
 
 footer {
@@ -70,7 +72,6 @@ footer {
     position: absolute;
     left: 197px;
     top: 175px;
-    border: dashed .2rem red;
     border-radius: 50%;
     width: auto;
     height:30rem;
@@ -136,12 +137,16 @@ footer {
     height: 40rem;
 }
 
-
-.contact-sections {
+.message-box,
+.contact-info {
     font-size: 1.5rem;
     line-height: 4rem;
+    border: black dashed 1px;
+}
+
+.message-box div,
+.contact-info div {
     padding: 2rem;
-    border: black dashed 1px
 }
 /* End Class Selectors */
 
@@ -170,8 +175,29 @@ li:hover .link-title {
 }
 
 .psuedo-image:hover .profile-image2 {
-    border-top: dashed .5rem red;
     opacity: 0;
+}
+
+.first-project:hover img {
+    height: 25rem;
+    width: auto;
+}
+
+.projects:hover img {
+    height: 20rem;
+    width: auto;
+}
+
+.contact-info:hover div {
+    background-color: lightgoldenrodyellow;
+}
+
+.message-box:hover div {
+    background-color: whitesmoke;
+}
+
+.message-box div:hover button {
+
 }
 /* End Psuedo Elements */
 
