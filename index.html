@@ -9,42 +9,43 @@
     <title>My Portfolio - Joseph Stanion</title>
 </head>
 
-<body class="left-margin">
+<body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li>
-                    <a href="#more-about-me">More About Me</a>
+                    <a class= "link-title" href="#more-about-me">More About Me</a>
                 </li>
                 <li>
-                    <a href="#my-work">My Work</a>
+                    <a class="link-title" href="#my-work">My Work</a>
                 </li>
                 <Li>
-                    <a href="#lets-connect">Let's Connect</a>
+                    <a class="link-title" href="#lets-connect">Let's Connect</a>
                 </Li>
             </ul>
         </nav>
     </header>
     
     <main>
+        <div class="psuedo-image">
+            <img class="profile-image2" src="./assets/images/Profile Image.jpg" alt="sketch image">
+        </div>
         <Section class="introduction">
-            <img id="profile-image" src="./assets/images/Profile Image.jpg" alt="Profile Image">
-            <div id="name">
+            <img class="profile-image1" src="./assets/images/sketch profile.jpg" alt="Profile Image">
+            <div>
                 <h1>Joey Stanion</h1>
                 <p id="employment">Full-Stack Web Developer</p>
             </div>
         </Section>
-    
-    
         <h2 id="more-about-me" class="section-heading">More About Me...</h2>
-        <section class="about-me">
-            <p>Pros: I can reach things on the top shelf, I never lose the TV remote, and I'm a decent cook.<br>I also like board games and puzzles 😉.<br>Cons: I usually hog the blanket, I sing the wrong lyrics to songs, and I make a lot of dad jokes, sans children.</p>
+        <section class="more-about-me">
+            <p><span style="background-color: yellow">Pros:</span> I can reach things on the top shelf, I never lose the TV remote, and I'm a decent cook. I also like board games and puzzles 😉.<br><br><span style="background-color: yellow">Cons:</span> I usually hog the blanket, I sing the wrong lyrics to songs, and I make a lot of dad jokes, sans children.</p>
         </section>
         
         <h2 id="my-work" class="section-heading">My Work</h2>
         
         <section class="my-work">
-            <a class="project-image" href="https://jstanion.github.io/Week1-Horiseon-refactor/" target="_blank">
+            <a class="projects" href="https://jstanion.github.io/Week1-Horiseon-refactor/" target="_blank">
                 <h3 class="project-title">Horiseon Code Refactor</h3>
                 <img src="./assets/images/Horiseon Refactor.png" alt="sample image of project">
             </a>
@@ -54,8 +55,8 @@
                 <img src="./assets/images/Prework study guide.png" alt="Sample image of project">
             </a>
             
-            <a class="project-image" href="#connect-with-me">
-                <h3>Your Future Project...</h3>
+            <a class="projects" href="#connect-with-me">
+                <h3 class="project-title">Your Future Project...</h3>
                 <img src="./assets/images/Question mark.png" alt="Picture of question mark">
             </a>
         </section>
@@ -63,25 +64,28 @@
         <h2 id="lets-connect" class="section-heading">Let's Connect</h2>
         
         <section class="connect-with-me">
-            <section class="contact-sessions">
-                <p>Send Me A Message Directly</p>
-                <input type="Name" placeholder="Full Name">
-                <br>
-                <input type="email" placeholder="Email Address">
-                <br>
-                <input type="message-box" placeholder="Type Message Here>">
-                <br>
-                <button>Send</button>
+            <section class="message-box">
+                <div>
+                    <p><span style="background-color: yellow">Send Me A Message Directly:</span></p>
+                    Name: <input type="Name" placeholder="Full Name">
+                    <br>
+                    Email: <input type="email" placeholder="Email Address">
+                    <br>
+                    Message: <textarea placeholder="Type Message Here"></textarea>
+                    <br>
+                    <button>Send</button>
+                </div>
             </section>
             
-            <section id="connect-with-me" class="contact-sections">
-                <p>My Contact Info</p>
-                <p>Number: 609-713-0282</p>
-                <p>Email Address: Joseph.stanion@gmail.com</p>
-                <p>Austin, Texas</p>
+            <section id="connect-with-me" class="contact-info">
+                <div>
+                    <p><span style="background-color: yellow">My Contact Info:</span></p>
+                    <p><span style="background-color: yellow">Number: 609-713-0282</span></p>
+                    <p><span style="background-color: yellow">Email: Joseph.stanion@gmail.com</span></p>
+                    <p><span style="background-color: yellow">Austin, Texas</span></p>
+                </div>
             </section>
-        </section>
-        
+        </section>       
     </main>
     
     <footer>
