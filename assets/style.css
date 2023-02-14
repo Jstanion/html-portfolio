@@ -69,13 +69,15 @@ footer {
 }
 
 .more-about-me {
-    font-size:1.7rem;
     display:flex;
     justify-content:center;
     align-items:center;
-    width:auto;
     height:40rem;
     line-height: 4rem;
+    font-size:1.7rem;
+}
+.more-about-me p {
+    width:90rem;
 }
 
 .my-work {
