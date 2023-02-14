@@ -9,17 +9,19 @@
 /* Start Element Selectors */
 body {
     background-color: #f2f2fb;
-}
-
-main {
+    width: 100%;
     background-color: #f2f2fb;
     opacity: 1;
     background-size: 28px 28px;
     background-image:  repeating-linear-gradient(0deg, #4a71b9, #4a71b9 1px, #f2f2fb 1.4000000000000001px, #f2f2fb);
 }
 
+main {
+}
+
 header {
-    background-color: #f2f2fb
+    background-color: #f2f2fb;
+    width: 100%;
 }
 
 header ul {
@@ -38,11 +40,20 @@ h1 {
     font-size: 5rem;
 }
 
+
 footer {
     display:flex;
     justify-content:center;
     width:100%;
     height: 100px;
+}
+
+button {
+    background-color: pink;
+}
+
+p {
+    line-height: 5rem
 }
 /* End Element Selectors */
 
@@ -59,11 +70,8 @@ footer {
     border-left: red solid 1px;
 }
 
-p {
-    line-height: 5rem
-}
 
-.about-me {
+.more-about-me {
     font-size:1.7rem;
     display:flex;
     justify-content:center;
@@ -76,6 +84,7 @@ p {
     display:flex;
     justify-content: center;
     font-size:2.3rem;
+    color: black;
 }
 
 .my-work {
@@ -100,50 +109,72 @@ p {
     height: 15rem;
     display:flex;
     justify-content: column;
-    border-style: dashed;
+    border: black dashed 1px;
 }
 
 .first-project img {
     margin: 1rem;
     width: auto;
     height: 20rem;
-    border-style: dashed;
+    border: black dashed 1px;
 }
 
 .connect-with-me {
     display:inline-flex;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 700px
 }
 
-.contact-sections {
+.project-title {
+    color: black;
+}
 
+.contact-sections {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 2rem;
+    border: black dashed 1px
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: auto;
+    height:30rem;
+    padding: 5%;
 }
 /* End Class Selectors */
 
 /* Start ID Selectors */
 #name {
     display:block;
-    margin:8rem;
 }
 
 #employment {
     font-size: 1.5rem;
 }
-
-#profile-image {
-    border-radius: 50%;
-    width: auto;
-    height:30rem;
-    padding: 5%
-}
 /* End ID Selectors */
 
-/* Start Media Queries */
+/* Start Psuedo Elements */
 
+/* End Psuedo Elements */
+
+/* Start Media Queries */
+@media screen and (max-width: 992px) {
+body {
+}
+
+    header {
+    display: inline-flex;
+    flex-direction: start;
+}
+
+li {
+    font-size: 1.4rem;
+}
+}
 /* End MEdia Queries */
 
 

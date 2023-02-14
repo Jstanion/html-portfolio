@@ -28,7 +28,7 @@
     
     <main>
         <Section class="introduction">
-            <img id="profile-image" src="./assets/images/Profile Image.jpg" alt="Profile Image">
+            <img class="profile-image" src="./assets/images/Profile Image.jpg" alt="Profile Image">
             <div id="name">
                 <h1>Joey Stanion</h1>
                 <p id="employment">Full-Stack Web Developer</p>
@@ -37,7 +37,7 @@
     
     
         <h2 id="more-about-me" class="section-heading">More About Me...</h2>
-        <section class="about-me">
+        <section class="more-about-me">
             <p>Pros: I can reach things on the top shelf, I never lose the TV remote, and I'm a decent cook.<br>I also like board games and puzzles 😉.<br>Cons: I usually hog the blanket, I sing the wrong lyrics to songs, and I make a lot of dad jokes, sans children.</p>
         </section>
         
@@ -55,7 +55,7 @@
             </a>
             
             <a class="project-image" href="#connect-with-me">
-                <h3>Your Future Project...</h3>
+                <h3 class="project-title">Your Future Project...</h3>
                 <img src="./assets/images/Question mark.png" alt="Picture of question mark">
             </a>
         </section>
@@ -63,25 +63,24 @@
         <h2 id="lets-connect" class="section-heading">Let's Connect</h2>
         
         <section class="connect-with-me">
-            <section class="contact-sessions">
-                <p>Send Me A Message Directly</p>
-                <input type="Name" placeholder="Full Name">
+            <section class="contact-sections">
+                <p><span style="background-color: yellow">Send Me A Message Directly:</span></p>
+                Name: <input type="Name" placeholder="Full Name">
                 <br>
-                <input type="email" placeholder="Email Address">
+                Email: <input type="email" placeholder="Email Address">
                 <br>
-                <input type="message-box" placeholder="Type Message Here>">
+                Message: <textarea placeholder="Type Message Here"></textarea>
                 <br>
                 <button>Send</button>
             </section>
             
             <section id="connect-with-me" class="contact-sections">
-                <p>My Contact Info</p>
-                <p>Number: 609-713-0282</p>
-                <p>Email Address: Joseph.stanion@gmail.com</p>
-                <p>Austin, Texas</p>
+                <p class="message-box"><span style="background-color: yellow">My Contact Info:</span></p>
+                <p class="message-box"><span style="background-color: yellow">Number: 609-713-0282</span></p>
+                <p class="message-box"><span style="background-color: yellow">Email: Joseph.stanion@gmail.com</span></p>
+                <p class="message-box"><span style="background-color: yellow">Austin, Texas</span></p>
             </section>
-        </section>
-        
+        </section>       
     </main>
     
     <footer>
