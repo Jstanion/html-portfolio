@@ -8,12 +8,23 @@
 
 /* Start Element Selectors */
 body {
-    background-color: #f2f2fb;
-    margin-left: 8rem;
     border-left: red solid 1px;
+    outline-offset: 25px;
+    margin-left: 8rem;
+    padding-top: 5rem;
+    
 }
 
-main {
+header {
+    background-color: #f2f2fb;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index:1;
+    
+}
+
+body {
     background-color: #f2f2fb;
     width: 100%;
     background-color: #f2f2fb;
