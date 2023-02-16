@@ -10,7 +10,6 @@
 body {
     border-left: red solid 1px;
     margin-left: 6rem;
-    padding-top: 5rem;
     background-color: #f2f2fb;
     background-color: #f2f2fb;
     opacity: 25;
@@ -21,7 +20,7 @@ body {
 header {
     background-color: #f2f2fb;
     width: 100%;
-    position: fixed;
+    height: fit-content;
     top: 0;
     z-index:1;
 }
@@ -34,19 +33,15 @@ button {
 
 footer {
     background-color: #f2f2fb;
-    display:flex;
-    justify-content:center;
+    display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    width:100%;
-    height: 4rem;
+    height: fit-content;
 }
 /* End Element Selectors */
 
 /* Start Class Selectors */
 .nav-links {
     display:flex;
-    flex-direction: end;
     align-items: center;
     Justify-content: space-evenly;
     list-style-type:none;
@@ -60,10 +55,10 @@ footer {
 }
 
 .introduction {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    width: 100%;
-    height: 40rem;
+    height: fit-content;
+    margin: 1rem 2rem 4rem 2rem;
     font-size: 3.5rem;
 }
 
@@ -75,16 +70,6 @@ footer {
     margin: 5%;
 }
 
-.profile-image2 {
-    position: absolute;
-    left: 222px;
-    top: 161px;
-    border-radius: 50%;
-    width: auto;
-    height:30rem;
-    z-index: 1;
-}
-
 .section-heading {
     display:flex;
     justify-content: center;
@@ -93,61 +78,54 @@ footer {
 }
 
 .more-about-me {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:40rem;
+    display: flex;
+    align-items: center;
+    height:fit-content;
+    margin: 1rem 2rem 4rem 2rem;
     line-height: 4rem;
     font-size:1.7rem;
 }
-.more-about-me p {
-    width:70rem;
-    margin: 0 3rem 0 3rem;
-}
 
 .my-work {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    height: 40rem;
+    margin: 1rem 2rem 4rem 2rem;
+    height: fit-content;
 }
 
 .my-work a {
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: center;
 }
 
 .projects img {
     margin:1rem;
     height: 15rem;
-    display:flex;
-    justify-content: column;
     border: black dashed 1px;
 }
 
 .first-project img {
     margin: 1rem;
     width: 25rem;
-    height: auto;
     border: black dashed 1px;
 }
 
 .lets-connect {
-    display:inline-flex;
+    display:flex;
     justify-content: center;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    height: 40rem;
+    margin: 1rem 2rem 4rem 2rem;
+    height: fit-content;
 }
 
 .message-box,
 .contact-info {
+    margin: 1rem;
     font-size: 1.5rem;
-    line-height: 4rem;
+    line-height: 3rem;
     border: black dashed 1px;
 }
 
@@ -163,6 +141,7 @@ footer {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    margin-bottom: 1.5rem;
 }
 
 .fa-facebook {
@@ -187,9 +166,9 @@ footer {
 /* End Class Selectors */
 
 /* Start ID Selectors */
-#employment {
+#job-title {
     font-size: 1.5rem;
-    line-height: 4rem;
+    line-height: 2rem;
 }
 /* End ID Selectors */
 
@@ -205,15 +184,12 @@ li:hover .link-title {
     font-size: 1.5rem;
 }
 
-.psuedo-image:hover .profile-image2 {
-    opacity: 0;
-}
-
 .first-project:hover img {
     height: 22rem;
     width: auto;
     box-shadow: 5px 5px #999;
 }
+
 .projects:hover img {
     height: 16rem;
     width: auto;
@@ -240,24 +216,19 @@ button:hover {
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.2;
   }
 /* End Psuedo Elements */
 
 /* Start Media Queries */
-@media screen and (max-width: 1225px) {
-.my-work {
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 1205px) {
+    .lets-connect,
+    .my-work {
+        flex-wrap: wrap;
 }
 }
 
 @media screen and (max-width: 1040px) {
-.nav-links {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 li:hover .link-title {
     color: red;
     font-size: 2rem;
@@ -265,116 +236,51 @@ li:hover .link-title {
 
 li a {
     font-size: 1.2rem;
-    display: flex;
 }
 
 .profile-image1 {
     width: auto;
-    height:20rem;
+    height:25rem;
 }
 
 .introduction {
-    justify-content: space-evenly;
-    height: 30rem;
+    font-size: 3rem;
+}
+
+.section-heading {
     font-size: 2rem;
-}
-
-#employment {
-    font-size: 1.8rem;
-}
-
-.my-work {
-    height: 70rem
-}
-
-.lets-connect {
-    flex-direction: column;
-    height: 60rem;
-}
-}
-
-@media screen and (max-width: 820px) {
-body {
-    margin-left: 5rem;
-}
-
-li:hover .link-title {
-    color: red;
-    font-size: 1rem;
-}
-
-.profile-image1 {
-    width: auto;
-    height:15rem;
-}
-
-.introduction {
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 30rem;
-    font-size: 2rem;
-}
-
-#employment {
-    font-size: 1.8rem;
+    text-align: center;
 }
 
 .more-about-me {
     font-size: 1.5rem;
     line-height: 2rem;
-    height: 25rem;
+}
 }
 
-#more-about-me,
-#my-work,
-#lets-connect {
-    font-size: 1.8rem;
+@media screen and (max-width: 935px) {
+.introduction {
+    flex-direction: column;
 }
 
-.first-project img {
-    height: 18rem;
-    width: auto;
+#job-title {
+    text-align: center;
+    line-height: auto;
+}
 }
 
-.projects img {
-    height: 12rem;
-    width: auto;
-}
-
-.first-project:hover img {
-    height: 20rem;
-    width: auto;
-    box-shadow: 5px 5px #999;
-}
-
-.projects:hover img {
-    height: 17rem;
-    width: auto;
-    box-shadow: 5px 5px #999;
-}
-
-.projects:hover h3,
-.first-project:hover h3 {
-    color: red;
+@media screen and (max-width: 820px),
+screen and (max-width: 768px) {
+.introduction {
     font-size: 2rem;
 }
 
-.my-work {
-    height: 65rem;
-}
-
-.lets-connect {
-    height: 40rem;
-}
-
-.message-box,
-.contact-info div {
-    font-size: 1.5rem;
-    line-height: 2rem;
+#job-title {
+    font-size: 1rem;
 }
 }
 
-@media screen and (max-width: 540px) {    
+@media screen and (max-width: 545px) {
 body {
     margin-left: 2rem;
 }
@@ -383,44 +289,39 @@ body {
     flex-direction: column;
 }
 
+
 li:hover .link-title {
     color: red;
+    font-size: 1.5rem;
+}
+
+li a {
     font-size: 1rem;
 }
 
 .profile-image1 {
     width: auto;
-    height:14rem;
+    height: 12rem;
 }
 
 .introduction {
-    justify-content: space-evenly;
-    height: 30rem;;
+    font-size: 1rem;
+    text-align: center;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-left: 4rem;
-}
-
-#employment {
-    font-size: 1.5rem;
-}
-
-#more-about-me,
-#my-work,
-#lets-connect {
-    font-size: 1.3rem;
+.section-heading,
+h3 {
+    font-size: 1rem;
+    text-align: center;
 }
 
 .more-about-me {
     font-size: 1rem;
     line-height: 1.5rem;
-    height: 25rem;
 }
 
 .first-project img {
-    height: 10rem;
+    height:10rem;
     width: auto;
 }
 
@@ -430,119 +331,22 @@ h1 {
 }
 
 .first-project:hover img {
-    height: 15rem;
-    width: auto;
-    box-shadow: 5px 5px #999;
+    height: 12rem;
 }
 
 .projects:hover img {
-    height: 12rem;
-    width: auto;
-    box-shadow: 5px 5px #999;
-}
-
-.projects:hover h3,
-.first-project:hover h3 {
-    color: red;
-    font-size: 1.4rem;
-}
-
-
-.my-work {
-    height: 50rem;
-}
-
-.lets-connect {
-    height: 35rem;
+    height: 10rem;
 }
 
 .message-box,
 .contact-info div {
     font-size: 1rem;
     line-height: 1.5rem;
-}
-}
-
-footer {
-    height: 3.5rem;
-    font-size: .8rem;
 }
 
 .fa {
     padding: 10px;
-    font-size: 10px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-@media screen and (max-width: 360px) {
-.nav-links a {
-    font-size: 1rem;
-}
-
-.profile-image1 {
-    width: auto;
-    height:10rem;
-}
-
-.introduction {
-    justify-content: space-evenly;
-    height: 25rem;;
-}
-
-h1 {
-    font-size: 1.5rem;
-    margin-left: 2.4rem;
-}
-
-#employment {
-    font-size: 1rem;
-}
-
-.more-about-me {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    height: 35rem;
-}
-
-.my-work {
-    height: 40rem;
-}
-
-.projects img {
-    height: 6rem;
+    font-size: 5px;
     width: auto;
 }
-
-.projects:hover img {
-    height: 8rem;
-    width: auto;
-    box-shadow: 5px 5px #999;
 }
-
-.first-project:hover img {
-    height: 10rem;
-    width: auto;
-    box-shadow: 5px 5px #999;
-}
-
-.project-title {
-    font-size: 1rem;
-}
-
-.projects:hover h3,
-.first-project:hover h3 {
-    color: red;
-    font-size: 1.1rem;
-}
-
-.message-box,
-.contact-info div {
-    font-size: .7rem;
-    line-height: 1.5rem;
-}
-}
-
-/* End MEdia Queries */
