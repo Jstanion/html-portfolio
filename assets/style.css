@@ -9,10 +9,13 @@
 /* Start Element Selectors */
 body {
     border-left: red solid 1px;
-    outline-offset: 25px;
-    margin-left: 8rem;
+    margin-left: 6rem;
     padding-top: 5rem;
-    
+    background-color: #f2f2fb;
+    background-color: #f2f2fb;
+    opacity: 25;
+    background-size: 28px 30px;
+    background-image:  repeating-linear-gradient(0deg, #4a71b9, #4a71b9 1px, #f2f2fb 1.4000000000000001px, #f2f2fb);
 }
 
 header {
@@ -21,16 +24,6 @@ header {
     position: fixed;
     top: 0;
     z-index:1;
-    
-}
-
-body {
-    background-color: #f2f2fb;
-    width: 100%;
-    background-color: #f2f2fb;
-    opacity: 25;
-    background-size: 28px 30px;
-    background-image:  repeating-linear-gradient(0deg, #4a71b9, #4a71b9 1px, #f2f2fb 1.4000000000000001px, #f2f2fb);
 }
 
 button {
@@ -40,11 +33,13 @@ button {
 }
 
 footer {
+    background-color: #f2f2fb;
     display:flex;
     justify-content:center;
+    justify-content: space-evenly;
     align-items: center;
     width:100%;
-    height: 7rem;
+    height: 4rem;
 }
 /* End Element Selectors */
 
@@ -55,7 +50,7 @@ footer {
     align-items: center;
     Justify-content: space-evenly;
     list-style-type:none;
-    height: 6rem;
+    height: 7rem;
     font-size: 2rem;
 }
 
@@ -73,6 +68,7 @@ footer {
 }
 
 .profile-image1 {
+    position:relative;
     border-radius: 50%;
     width: auto;
     height:30rem;
@@ -81,11 +77,12 @@ footer {
 
 .profile-image2 {
     position: absolute;
-    left: 197px;
-    top: 175px;
+    left: 222px;
+    top: 161px;
     border-radius: 50%;
     width: auto;
     height:30rem;
+    z-index: 1;
 }
 
 .section-heading {
@@ -105,11 +102,11 @@ footer {
 }
 .more-about-me p {
     width:70rem;
+    margin: 0 3rem 0 3rem;
 }
 
 .my-work {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
@@ -125,7 +122,6 @@ footer {
 
 .projects img {
     margin:1rem;
-    width:auto;
     height: 15rem;
     display:flex;
     justify-content: column;
@@ -134,15 +130,15 @@ footer {
 
 .first-project img {
     margin: 1rem;
-    width: auto;
-    height: 20rem;
+    width: 25rem;
+    height: auto;
     border: black dashed 1px;
 }
 
-.connect-with-me {
+.lets-connect {
     display:inline-flex;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 40rem;
@@ -159,6 +155,35 @@ footer {
 .contact-info div {
     padding: 2rem;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
 /* End Class Selectors */
 
 /* Start ID Selectors */
@@ -166,7 +191,6 @@ footer {
     font-size: 1.5rem;
     line-height: 4rem;
 }
-
 /* End ID Selectors */
 
 /* Start Psuedo Elements */
@@ -175,14 +199,10 @@ li:hover .link-title {
     font-size: 3rem;
 }
 
-.projects:hover h3 {
-    color: red;
-    font-size: 2rem;
-}
-
+.projects:hover h3,
 .first-project:hover h3 {
     color: red;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .psuedo-image:hover .profile-image2 {
@@ -190,41 +210,339 @@ li:hover .link-title {
 }
 
 .first-project:hover img {
-    height: 25rem;
+    height: 22rem;
     width: auto;
+    box-shadow: 5px 5px #999;
 }
-
 .projects:hover img {
-    height: 20rem;
+    height: 16rem;
     width: auto;
+    box-shadow: 5px 5px #999;
 }
 
 .contact-info:hover div {
     background-color: lightgoldenrodyellow;
+    box-shadow: 5px 5px #999;
 }
 
 .message-box:hover div {
     background-color: whitesmoke;
+    box-shadow: 5px 5px #999;
 }
 
-.message-box div:hover button {
-
+button:active {
+    background-color: #FB96CE;
+    transform: translateY(4px);
 }
+
+button:hover {
+    cursor: pointer;
+}
+
+.fa:hover {
+    opacity: 0.7;
+  }
 /* End Psuedo Elements */
 
 /* Start Media Queries */
-@media screen and (max-width: 992px) {
-body {
+@media screen and (max-width: 1225px) {
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+}
 }
 
-header {
-    display: inline-flex;
-    flex-direction: start;
+@media screen and (max-width: 1040px) {
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li:hover .link-title {
+    color: red;
+    font-size: 2rem;
 }
 
 li a {
     font-size: 1.2rem;
     display: flex;
 }
+
+.profile-image1 {
+    width: auto;
+    height:20rem;
 }
+
+.introduction {
+    justify-content: space-evenly;
+    height: 30rem;
+    font-size: 2rem;
+}
+
+#employment {
+    font-size: 1.8rem;
+}
+
+.my-work {
+    height: 70rem
+}
+
+.lets-connect {
+    flex-direction: column;
+    height: 60rem;
+}
+}
+
+@media screen and (max-width: 820px) {
+body {
+    margin-left: 5rem;
+}
+
+li:hover .link-title {
+    color: red;
+    font-size: 1rem;
+}
+
+.profile-image1 {
+    width: auto;
+    height:15rem;
+}
+
+.introduction {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30rem;
+    font-size: 2rem;
+}
+
+#employment {
+    font-size: 1.8rem;
+}
+
+.more-about-me {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    height: 25rem;
+}
+
+#more-about-me,
+#my-work,
+#lets-connect {
+    font-size: 1.8rem;
+}
+
+.first-project img {
+    height: 18rem;
+    width: auto;
+}
+
+.projects img {
+    height: 12rem;
+    width: auto;
+}
+
+.first-project:hover img {
+    height: 20rem;
+    width: auto;
+    box-shadow: 5px 5px #999;
+}
+
+.projects:hover img {
+    height: 17rem;
+    width: auto;
+    box-shadow: 5px 5px #999;
+}
+
+.projects:hover h3,
+.first-project:hover h3 {
+    color: red;
+    font-size: 2rem;
+}
+
+.my-work {
+    height: 65rem;
+}
+
+.lets-connect {
+    height: 40rem;
+}
+
+.message-box,
+.contact-info div {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+}
+
+@media screen and (max-width: 540px) {    
+body {
+    margin-left: 2rem;
+}
+
+.nav-links {
+    flex-direction: column;
+}
+
+li:hover .link-title {
+    color: red;
+    font-size: 1rem;
+}
+
+.profile-image1 {
+    width: auto;
+    height:14rem;
+}
+
+.introduction {
+    justify-content: space-evenly;
+    height: 30rem;;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+
+#employment {
+    font-size: 1.5rem;
+}
+
+#more-about-me,
+#my-work,
+#lets-connect {
+    font-size: 1.3rem;
+}
+
+.more-about-me {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 25rem;
+}
+
+.first-project img {
+    height: 10rem;
+    width: auto;
+}
+
+.projects img {
+    height: 7rem;
+    width: auto;
+}
+
+.first-project:hover img {
+    height: 15rem;
+    width: auto;
+    box-shadow: 5px 5px #999;
+}
+
+.projects:hover img {
+    height: 12rem;
+    width: auto;
+    box-shadow: 5px 5px #999;
+}
+
+.projects:hover h3,
+.first-project:hover h3 {
+    color: red;
+    font-size: 1.4rem;
+}
+
+
+.my-work {
+    height: 50rem;
+}
+
+.lets-connect {
+    height: 35rem;
+}
+
+.message-box,
+.contact-info div {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+}
+
+footer {
+    height: 3.5rem;
+    font-size: .8rem;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 360px) {
+.nav-links a {
+    font-size: 1rem;
+}
+
+.profile-image1 {
+    width: auto;
+    height:10rem;
+}
+
+.introduction {
+    justify-content: space-evenly;
+    height: 25rem;;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-left: 2.4rem;
+}
+
+#employment {
+    font-size: 1rem;
+}
+
+.more-about-me {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 35rem;
+}
+
+.my-work {
+    height: 40rem;
+}
+
+.projects img {
+    height: 6rem;
+    width: auto;
+}
+
+.projects:hover img {
+    height: 8rem;
+    width: auto;
+    box-shadow: 5px 5px #999;
+}
+
+.first-project:hover img {
+    height: 10rem;
+    width: auto;
+    box-shadow: 5px 5px #999;
+}
+
+.project-title {
+    font-size: 1rem;
+}
+
+.projects:hover h3,
+.first-project:hover h3 {
+    color: red;
+    font-size: 1.1rem;
+}
+
+.message-box,
+.contact-info div {
+    font-size: .7rem;
+    line-height: 1.5rem;
+}
+}
+
 /* End MEdia Queries */
