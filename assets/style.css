@@ -9,10 +9,13 @@
 /* Start Element Selectors */
 body {
     border-left: red solid 1px;
-    outline-offset: 25px;
-    margin-left: 8rem;
+    margin-left: 6rem;
     padding-top: 5rem;
-    
+    background-color: #f2f2fb;
+    background-color: #f2f2fb;
+    opacity: 25;
+    background-size: 28px 30px;
+    background-image:  repeating-linear-gradient(0deg, #4a71b9, #4a71b9 1px, #f2f2fb 1.4000000000000001px, #f2f2fb);
 }
 
 header {
@@ -21,16 +24,6 @@ header {
     position: fixed;
     top: 0;
     z-index:1;
-    
-}
-
-body {
-    background-color: #f2f2fb;
-    width: 100%;
-    background-color: #f2f2fb;
-    opacity: 25;
-    background-size: 28px 30px;
-    background-image:  repeating-linear-gradient(0deg, #4a71b9, #4a71b9 1px, #f2f2fb 1.4000000000000001px, #f2f2fb);
 }
 
 button {
@@ -42,6 +35,7 @@ button {
 footer {
     display:flex;
     justify-content:center;
+    justify-content: space-evenly;
     align-items: center;
     width:100%;
     height: 7rem;
@@ -55,7 +49,7 @@ footer {
     align-items: center;
     Justify-content: space-evenly;
     list-style-type:none;
-    height: 6rem;
+    height: 7rem;
     font-size: 2rem;
 }
 
@@ -63,6 +57,35 @@ footer {
 .project-title {
     color: black;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
 
 .introduction {
     display: inline-flex;
@@ -73,6 +96,7 @@ footer {
 }
 
 .profile-image1 {
+    position:relative;
     border-radius: 50%;
     width: auto;
     height:30rem;
@@ -81,11 +105,12 @@ footer {
 
 .profile-image2 {
     position: absolute;
-    left: 197px;
-    top: 175px;
+    left: 222px;
+    top: 161px;
     border-radius: 50%;
     width: auto;
     height:30rem;
+    z-index: 1;
 }
 
 .section-heading {
@@ -125,7 +150,6 @@ footer {
 
 .projects img {
     margin:1rem;
-    width:auto;
     height: 15rem;
     display:flex;
     justify-content: column;
@@ -142,7 +166,7 @@ footer {
 .connect-with-me {
     display:inline-flex;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 40rem;
@@ -166,7 +190,6 @@ footer {
     font-size: 1.5rem;
     line-height: 4rem;
 }
-
 /* End ID Selectors */
 
 /* Start Psuedo Elements */
@@ -175,11 +198,7 @@ li:hover .link-title {
     font-size: 3rem;
 }
 
-.projects:hover h3 {
-    color: red;
-    font-size: 2rem;
-}
-
+.projects:hover h3,
 .first-project:hover h3 {
     color: red;
     font-size: 2rem;
@@ -207,15 +226,14 @@ li:hover .link-title {
     background-color: whitesmoke;
 }
 
-.message-box div:hover button {
+.fa:hover {
+    opacity: 0.7;
+  }
 
-}
 /* End Psuedo Elements */
 
 /* Start Media Queries */
 @media screen and (max-width: 992px) {
-body {
-}
 
 header {
     display: inline-flex;
