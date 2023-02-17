@@ -100,6 +100,10 @@ footer {
     justify-content: center;
 }
 
+.my-work section {
+    flex-direction: column;
+}
+
 .projects img {
     margin:1rem;
     height: 15rem;
@@ -108,7 +112,7 @@ footer {
 
 .first-project img {
     margin: 1rem;
-    width: 25rem;
+    width: 40rem;
     border: black dashed 1px;
 }
 
@@ -185,8 +189,8 @@ li:hover .link-title {
 }
 
 .first-project:hover img {
-    height: 22rem;
-    width: auto;
+    height: auto;
+    width: 42rem;
     box-shadow: 5px 5px #999;
 }
 
@@ -277,6 +281,17 @@ screen and (max-width: 768px) {
 
 #job-title {
     font-size: 1rem;
+}
+
+.first-project img {
+    height:auto;
+    width: 20rem;
+}
+
+.first-project:hover img {
+    height: auto;
+    width: 22rem;
+    box-shadow: 5px 5px #999;
 }
 }
 
