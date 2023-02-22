@@ -6,7 +6,7 @@ I created this portfolio in hopes for a quality "jumping-off" point in my career
 
 ## Screenshot of Web Application
 
-![Screenshot of web browser showing a profile image, name and job title, a bigraphy and projects section, contact info, and icons linking social media accounts.](assets/images/portfolio%20screenshot.png)
+![Screenshot of web browser showing a profile image, name and job title, a bigraphy and projects section, contact info, and icons linking social media accounts.](assets/images/portfolio-screenshot.png)
 
 ## Credits
 
